@@ -11,6 +11,7 @@ user32_lib = cxx.find_library('user32')
 exe = executable('handmade', 
   'code/handmain.cpp',
   dependencies : [user32_lib],
+  cpp_args : ['-DUNICODE'],
   gui_app : true)
 
 
